@@ -1,0 +1,257 @@
+# Site - Apple Shop :
+
+- Sem sistema do cliente só api WhatsApp
+- Mensagem de boas vindas credito cashback
+
+- Aniversário
+  - Pagina de Resgate de Beneficios 
+  - Desconto Maior de Produto 
+  - Padrão para todos os Clientes
+  - Vale compras de tal valor
+  - Relatorio de Resgate de aniversário
+
+- Login Master
+  - Relatorios   
+
+
+
+--------------------------||
+Projeto Apple Shop 
+
+Cadastro Vendedores
+Automação IA pra WhatsApp 
+Lançar cachback 
+Debitar cashback 
+Lançar 
+Indicar vendedor
+Código vendedor, nome dos vendedores 
+Indicar cliente 
+Verificação de cpf para conferir existência 
+Pesquisa por nome pesquisa por cpf 
+
+Cadastrar: 
+Nome
+Cpf 
+Nascimento 
+Telefone 
+- Cadastro so por telefone sem senha ?
+
+
+
+Tipo de Produto 
+Valor da Compra
+Cálculo a Partir do Valor 
+
+Página posterior a compra 
+Mensagem via WhatsApp 
+Parabéns pela compra você ganhou tal cachback pra realizar compras na Apple shop com validade a ….
+
+Sistema para o vendedor quantidade mínima a ser comprada 
+Número da venda 
+Vende
+Pega número 
+Passa pro cashback 
+
+Código de confirmação de compra 
+Lançar Cashback 
+Debitar Cashback
+
+Sistema de aniversário para bônus em compra 
+Aviso prévio 
+Aviso no dia 
+Saber se já utilizou cashback 
+
+————————-///
+# Sistemas : 
+
+- Login :
+  Usuario (Sistema de Cadastro)
+  Senha
+  Conexão com redes sociais 
+
+- Seleção e Compra de Dominio
+  - Administração de Dominio
+  - Campos de Redirecionamento de Dominio e Sub Dominio  
+
+- Cadastro de Produtos - Banco de Dados Firebase 
+  - Campo de Inserção de Valor
+  - Cálculo do CashBack
+  - Registro do CashBack no Banco de Dados do Cliente
+  - Banco de Dados Separado para Cada Cliente 
+  - Plataforma SQL Unica para Todos os Clientes
+  - Registro da Plataforma em Nuvem - Assinatura na Nuvem
+
+- Modelo de Site - Projeto CSS - Javascript - SQL 
+  - Campo do Site Inicial - Página Inicial
+  - Campo da Página Inicial Pós Login para Usúario Comum
+    - Informações de CashBack Dispóniveis por Produto
+    - CashBack Dispónivel por Acumulo
+    - Possibilidade de Acumulo por Indicação e Valor de Compra da Indicação ?
+  - Pagina do Administrador
+    - Campos da Página do Administrador
+    - Comandos de Admin Separados para Administrador
+    - Comandos de Admin Separados para Gerenciamento do Programador
+    
+- Sistema Futuro Aplicativo Android e IOS - Flutter - Java
+  - Preparação de Código para Base Mutua
+  - Utilização de Plataformas de Código Misto 
+  - Sistema de Importação Simples Para Aplicativo
+  - Sistema de Anuncio de Promoções
+    - Criação de Plataforma para Gerenciamento do Designer 
+      - Plataforma Simples com Campos Base Formados 
+      
+
+
+- Pagamento Online Retirada na Loja ou por Delivery 
+  - Sistema de Ciclagem de Postagens Baseado no Counter de Clientes
+    - Sistema de Monitoramento de Novos e Antigos Clientes
+
+- Sistema de Ficha 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------||
+# Sistemas : 
+
+- Login :
+  Usuario (Sistema de Cadastro)
+  Senha
+  Conexão com redes sociais 
+
+- Seleção e Compra de Dominio
+  - Administração de Dominio
+  - Campos de Redirecionamento de Dominio e Sub Dominio  
+
+- Cadastro de Produtos - Banco de Dados Firebase 
+  - Campo de Inserção de Valor
+  - Cálculo do CashBack
+  - Registro do CashBack no Banco de Dados do Cliente
+  - Banco de Dados Separado para Cada Cliente 
+  - Plataforma SQL Unica para Todos os Clientes
+  - Registro da Plataforma em Nuvem - Assinatura na Nuvem
+
+- Modelo de Site - Projeto CSS - Javascript - SQL 
+  - Campo do Site Inicial - Página Inicial
+  - Campo da Página Inicial Pós Login para Usúario Comum
+    - Informações de CashBack Dispóniveis por Produto
+    - CashBack Dispónivel por Acumulo
+    - Possibilidade de Acumulo por Indicação e Valor de Compra da Indicação ?
+  - Pagina do Administrador
+    - Campos da Página do Administrador
+    - Comandos de Admin Separados para Administrador
+    - Comandos de Admin Separados para Gerenciamento do Programador
+    
+- Sistema Futuro Aplicativo Android e IOS - Flutter - Java
+  - Preparação de Código para Base Mutua
+  - Utilização de Plataformas de Código Misto 
+  - Sistema de Importação Simples Para Aplicativo
+  - Sistema de Anuncio de Promoções
+    - Criação de Plataforma para Gerenciamento do Designer 
+      - Plataforma Simples com Campos Base Formados 
+      
+
+
+- Pagamento Online Retirada na Loja ou por Delivery 
+  - Sistema de Ciclagem de Postagens Baseado no Counter de Clientes
+    - Sistema de Monitoramento de Novos e Antigos Clientes
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

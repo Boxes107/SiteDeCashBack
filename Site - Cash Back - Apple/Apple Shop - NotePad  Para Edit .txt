@@ -1,0 +1,286 @@
+Modifique esse código para que os botões volte a cumprir sua funcionalidade :
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo de Botões e Formulários</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+        background-color: #007bff;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 20px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .custom-button {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        border-radius: 50px;
+    }
+
+    .form-container {
+        margin-top: 20px;
+        display: none;
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .form-container.active {
+        display: block;
+    }
+
+    .form-container form {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .form-container form h2 {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-top: 0;
+    }
+
+    .form-container form label {
+        font-weight: bold;
+        color: #333;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .form-container form input[type=text],
+    .form-container form input[type=date] {
+        width: calc(100% - 22px);
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .submit-button {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    .submit-button:hover {
+        background-color: #0056b3;
+    }
+
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+    <header>
+        <h1>Exemplo de Botões e Formulários</h1>
+    </header>
+
+    <!-- Primeira faixa -->
+    <div style="background-color: black; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+        <!-- Botões de Cadastro -->
+        <button class="custom-button" id="cadastrarClienteButton" onclick="toggleForm('formContainer1')">Cadastrar Cliente</button>
+        <button class="custom-button" id="cadastrarProdutoButton" onclick="toggleForm('formContainer2')">Cadastrar Produto</button>
+        <button class="custom-button" id="editarCashbackButton" onclick="toggleForm('formContainer5')">Editar CashBack</button>
+    </div>
+    
+    <!-- Segunda faixa -->
+    <div style="background-color: black; padding: 20px; border-radius: 10px;">
+        <!-- Botões de Cadastro -->
+        <button class="custom-button" id="cadastrarFornecedorButton" onclick="toggleForm('formContainer3')">Cadastrar Fornecedor</button>
+        <button class="custom-button" id="cadastrarPedidoButton" onclick="toggleForm('formContainer4')">Cadastrar Pedido</button>
+    </div>
+
+    <!-- Formulários -->
+    <div class="form-container" id="formContainer1">
+        <form id="formularioAniversario">
+            <h2>Formulário Cliente :</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome_cliente_id" placeholder="Nome">
+            <label for="aniversario">Aniversário:</label>
+            <input type="date" id="aniversario" name="data_aniversario" placeholder="Data de Aniversário" max="9999-12-31">
+        </form>
+
+        <form id="formularioTelefone">
+            <h2>Formulário de Inserção de Telefone :</h2>
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="cliente_telefone" pattern="\(\d{2}\) \(\d{5}-\d{4}\)" placeholder="(00) (00000-0000)" required>
+        </form>
+
+        <form id="formularioCPF">
+            <h2>Formulário de Inserção de CPF :</h2>
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf_cliente_id" pattern="\d{3}-\d{3}-\d{3}-\d{2}" placeholder="000-000-000-00" required>
+        </form>
+
+        <!-- Botão de Envio -->
+        <button class="submit-button" onclick="enviarDadosCliente()">Enviar Dados</button>
+
+    </div>
+    
+    <div class="form-container" id="formContainer5">
+        <form id="formularioEdicaoCashback">
+            <h2>Editar CashBack :</h2>
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                <label for="porcentagemProduto">Porcentagem CashBack Produto:</label>
+                <input type="number" id="porcentagemProduto" name="porcentagemProduto" min="0" required><br><br>
+        
+                <label for="porcentagemAcessorio">Porcentagem CashBack Acessório:</label>
+                <input type="number" id="porcentagemAcessorio" name="porcentagemAcessorio" min="0" required><br><br>
+        
+                <label for="porcentagemAssistencia">Porcentagem CashBack Assistência Técnica:</label>
+                <input type="number" id="porcentagemAssistencia" name="porcentagemAssistencia" min="0" required><br><br>
+        
+                <label for="valorMinimoProduto">Valor Mínimo CashBack Produto:</label>
+                <input type="number" id="valorMinimoProduto" name="valorMinimoProduto" min="0" required><br><br>
+        
+                <label for="valorMinimoAcessorio">Valor Mínimo CashBack Acessório:</label>
+                <input type="number" id="valorMinimoAcessorio" name="valorMinimoAcessorio" min="0" required><br><br>
+        
+                <label for="valorMinimoAssistencia">Valor Mínimo CashBack Assistência Técnica:</label>
+                <input type="number" id="valorMinimoAssistencia" name="valorMinimoAssistencia" min="0" required><br><br>
+
+                <!-- Botão de Envio -->
+                <button class="submit-button" onclick="EditarPorcentagemdeCashback()">Enviar Dados</button>
+        </form>
+    </div>
+
+
+    <div class="form-container" id="formContainer2">
+
+        <form id="formularioProduto">
+            <h2>Formulário de Cadastro de Produto :</h2>
+            <label for="nomeProduto">Nome do Produto:</label>
+            <input type="text" id="nomeProduto" name="nomeProduto" placeholder="Nome do Produto">
+            <label for="precoProduto">Preço do Produto:</label>
+            <input type="number" id="precoProduto" name="precoProduto" placeholder="Preço do Produto">
+        </form>
+    </div>
+
+    <div class="form-container" id="formContainer3">
+
+        <form id="formularioFornecedor">
+            <h2>Formulário de Cadastro de Fornecedor :</h2>
+            <label for="nomeFornecedor">Nome do Fornecedor:</label>
+            <input type="text" id="nomeFornecedor" name="nomeFornecedor" placeholder="Nome do Fornecedor">
+            <label for="cnpjFornecedor">CNPJ do Fornecedor:</label>
+            <input type="text" id="cnpjFornecedor" name="cnpjFornecedor" pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" placeholder="00.000.000/0000-00">
+        </form>
+    </div>
+
+    <div class="form-container" id="formContainer4">
+
+        <form id="formularioPedido">
+            <h2>Formulário de Cadastro de Pedido :</h2>
+            <label for="produtoPedido">Produto:</label>
+            <select id="produtoPedido" name="produtoPedido">
+                <option value="produto1">Produto 1</option>
+                <option value="produto2">Produto 2</option>
+                <option value="produto3">Produto 3</option>
+            </select>
+            <label for="quantidadePedido">Quantidade:</label>
+            <input type="number" id="quantidadePedido" name="quantidadePedido" placeholder="Quantidade">
+        </form>
+    </div>
+
+</div>
+
+<script>
+    function toggleForm(formId) {
+        var formContainer = document.getElementById(formId);
+        formContainer.classList.toggle("active");
+    }
+    
+    function enviarDados() {
+        // Adicione aqui a lógica para enviar os dados de todos os formulários
+        alert("Dados enviados!");
+    }
+
+    // Função para Validar CPF :
+    function validarCPF(cpf) {
+    cpf = cpf.replace(/[^\d]+/g, '');
+    if (cpf == '') return false;
+    // Verificar se todos os dígitos são iguais
+    if (/^(\d)\1+$/.test(cpf)) return false;
+    // Verificar o primeiro dígito verificador
+    let soma = 0;
+    for (let i = 0; i < 9; i++) soma += parseInt(cpf.charAt(i)) * (10 - i);
+    let resto = soma % 11;
+    let digitoVerificador1 = resto < 2 ? 0 : 11 - resto;
+    if (parseInt(cpf.charAt(9)) != digitoVerificador1) return false;
+    // Verificar o segundo dígito verificador
+    soma = 0;
+    for (let i = 0; i < 10; i++) soma += parseInt(cpf.charAt(i)) * (11 - i);
+    resto = soma % 11;
+    let digitoVerificador2 = resto < 2 ? 0 : 11 - resto;
+    return parseInt(cpf.charAt(10)) == digitoVerificador2;
+    }
+
+    // Função para Validar CPF no código :
+    function validarCampoCPF(cpf){
+        let cpf = '123.456.789-09';
+    if (validarCPF(cpf)) {
+    console.log('CPF válido');
+    } else {
+    console.log('CPF inválido');
+    }
+    }
+    
+
+</script>
+    
+</body>
+</html>

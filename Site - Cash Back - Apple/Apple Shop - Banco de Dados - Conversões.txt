@@ -1,0 +1,47 @@
+# Apple Shop - Banco de Dados - Conversões :
+
+from datetime import datetime
+
+# Função para converter data do formato DD-MM-AAAA para AAAA-MM-DD
+def converter_data(data_web):
+    # Converter a string de data para um objeto datetime
+    data_objeto = datetime.strptime(data_web, '%d-%m-%Y')
+    # Converter o objeto datetime de volta para uma string no formato AAAA-MM-DD
+    data_bd = data_objeto.strftime('%Y-%m-%d')
+    return data_bd
+
+# Exemplo de uso
+data_web = '18-03-2024'
+data_bd = converter_data(data_web)
+print("Data no formato do Banco de Dados:", data_bd)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

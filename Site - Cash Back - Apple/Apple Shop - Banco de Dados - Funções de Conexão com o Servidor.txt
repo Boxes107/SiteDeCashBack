@@ -1,0 +1,66 @@
+# Apple Shop - Banco de Dados - Funções de Conexão com o Servidor :
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------||
+const express = require('express');
+const bodyParser = require('body-parser');
+const mysql = require('mysql');
+
+const app = express();
+const port = 3000;
+
+// Configuração do banco de dados
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'seu_usuario',
+  password: 'sua_senha',
+  database: 'sua_base_de_dados'
+});
+
+connection.connect((err) => {
+  if (err) throw err;
+  console.log('Conectado ao banco de dados MySQL');
+});
+
+// Middleware para analisar o corpo da solicitação
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+// Rota para manipular a requisição do botão
+app.post('/adicionar_nome', (req, res) => {
+  const nome = req.body.nome;
+
+  // Executar a consulta SQL para adicionar o campo nome à tabela
+  const sql = `ALTER TABLE sua_tabela ADD COLUMN nome VARCHAR(255)`;
+  connection.query(sql, (err, result) => {
+    if (err) throw err;
+    console.log('Campo nome adicionado à tabela com sucesso');
+    res.send('Campo nome adicionado à tabela com sucesso');
+  });
+});
+
+// Iniciar o servidor
+app.listen(port, () => {
+  console.log(`Servidor web rodando em http://localhost:${port}`);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+

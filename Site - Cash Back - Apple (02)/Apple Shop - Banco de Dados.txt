@@ -1,0 +1,169 @@
+# Apple Shop - Banco de Dados :
+
+# Banco de Dados Apple Shop : 
+# Login_note : 
+  - Vendedor_note      ,
+
+# Login_appleshop      :
+  - Vendedor_appleshop ,
+
+# Vendedor : 
+  - Tipo_Vendedor :
+    - Vendedor_AppleShop , 
+    - Vendedor_Note      ,
+  - Nome_Vendedor ,
+  - Cpf_Vendedor  , 
+  - CashBack_Emitido_Dia ,
+  - Quantidade_Vendas    ,  
+  - ValorVendido_Dia     ,
+  - Numero_Compra                           
+  - Quantidade_CashBack_Produto_Vendido             ,
+  - Quantidade_CashBack_Acessorio_Vendido           ,  
+  - Quantidade_CashBack_Assistencia Tecnica_Vendido , 
+  
+# Cliente :
+  - Cliente_Nome         ,
+  - Cliente_Cpf          ,
+  - Cliente_Aniversario  ,
+  - Cliente_Telefone     ,
+  - Cliente_Cashback     , 
+  - Cliente_Compra_Data  
+    - Valor_Compra
+    - Valor_CashBack
+
+# Data :
+  - Compra_Data                                  ,
+  - Porcentagem_CashBack_Data_Produto            ,
+  - Porcentagem_CashBack_Data_Acessorio          ,
+  - Porcentagem_CashBack_Data_AssistenciaTecnica ,
+  - ValorMinimo_CashBack_Data_Produto            ,
+  - ValorMinimo_CashBack_Data_Acessorio          ,
+  - ValorMinimo_CashBack_Data_AssistenciaTecnica ,
+
+# Tipo_de_compra :
+  - Tipo_de_compra_produto         :
+    - Valor_cashback_produto       ,
+  - Tipo_de_compra_acessorio       :
+    - Valor_cashback_acessorio                 ,
+  - Tipo_de_compra_assistencia_tecnica         :
+    - Valor_cashback_assistencia_tecnica       ,
+
+
+
+# Edição_tipo_de_compra :
+  - Pegar Campo Banco de Dados - Mover Campo para Pagina Web - Abrir Sistema
+    de Edição no Campo - Editar Comando da Caixa Enter - Mover Comandos Para 
+    Banco de Dados
+  - Valor_cashback_produto
+  - Valor_cashback_acessorio
+  - Valor_cashback_assistencia_tecnica 
+
+
+# 
+
+
+
+--------------------------------------||
+# Gatilhos :
+- Puxar Dados Campo Edição - Editar Dados em Campo Edição
+- Mudar Dia - Mudar Data do Dia
+- Puxar Login Apple Shop
+  - Puxar Login Note
+  - Puxar Login Apple Shop Note 
+- Catalogar Cliente
+  - Identificar Data
+  - Inserir Campo - Nome - Cpf - Aniversario 
+- Pesquisar Cliente
+  - Gatilho Identificar Cpf
+  - Gatilho Identificar Nome 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

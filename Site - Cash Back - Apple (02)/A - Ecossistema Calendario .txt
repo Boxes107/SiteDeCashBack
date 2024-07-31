@@ -1,0 +1,112 @@
+# Ecossistema Calendario :
+
+
+- Variavel de Cor :
+  - Palheta de Cores a Depender do Volume de Compras ,
+    - Configuração da Cor :
+      - Link ao Banco de Dados :
+        - Soma Variavel ao Volume de CashBack e Compras , 
+    - Ecossistema Padrão do Calendário :
+      - Partição CSS , Página do CSS armzenada especificamente para 
+        utilização em outros campos do código 
+
+- Sistema de Padrão de Hora :
+  - Padrão Dinamico Sincronizado com um Servidor
+  - Padrão de Inserção Direto no Código ao Fim 
+
+  -  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

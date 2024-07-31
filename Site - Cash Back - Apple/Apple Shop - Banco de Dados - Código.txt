@@ -1,0 +1,103 @@
+# Apple Shop - Banco de Dados - Código :
+
+Use os seguintes comandos de criação de tabela como exemplo, e crie os 
+seguintes gatilhos, 
+
+# Quantidade_Vendas :
+  - Selecionar a Tabela Gasto CashBack  ,
+  - Select no Vendedor Nome             ,
+    - Contar Quantas Tabelas Existem    ,
+  - Select no Vendedor Nome             :
+   - Select em Cada Tabela Valor | Valor_Cashback_Gasto | Valor_Cashback_Emitido | 
+   - Comando de Soma Com Comando Select ,
+
+# ValorVendido_Dia  :
+  - Select na Tabela Gasto Cashback   :
+  - Select na Fileiras de Valor       ,
+
+-------------------------------------------------------------------------||
+
+CREATE TABLE vendedor_appleshop (
+    nome_vendedor_appleshop_id VARCHAR(51),
+    cpf_vendedor_appleshop_id INT(11),
+    PRIMARY KEY (cpf_vendedor_appleshop_id)
+);
+
+CREATE TABLE vendedor_note (
+    nome_vendedor_note_id VARCHAR(51),
+    cpf_vendedor_note_id INT(11),
+    PRIMARY KEY (cpf_vendedor_note_id)
+);
+
+CREATE TABLE cliente (
+    nome_cliente_id VARCHAR(51) NOT NULL,
+    cpf_cliente_id INT(11) NOT NULL,
+    data_aniversario DATE NOT NULL,
+    cliente_telefone INT(14) NOT NULL,
+    cliente_cashback INT(9),
+    PRIMARY KEY (nome_cliente_id),
+    UNIQUE (cpf_cliente_id)
+);
+
+CREATE TABLE cliente_corpotativo (
+    cnpj_cliente_corpotativo_id INT(14) NOT NULL,
+    cliente_corpotativo_telefone INT(14) NOT NULL,
+    cliente_corpotativo_cashback INT(9),
+    PRIMARY KEY (cnpj_cliente_corpotativo_id)
+);
+
+CREATE TABLE data_dados (
+    compra_data_id DATE NOT NULL,
+    porcentagem_cashback_data_produto INT(1) NOT NULL,
+    porcentagem_cashback_data_acessorio INT(1) NOT NULL,
+    porcentagem_cashback_data_assistenciatecnica INT(1) NOT NULL,
+    valorminimo_cashback_produto INT(5) NOT NULL,
+    valorminimo_cashback_acessorio INT(5) NOT NULL,
+    valorminimo_cashback_assistenciatecnica INT(5) NOT NULL,
+    PRIMARY KEY (compra_data_id)
+);
+
+CREATE TABLE tabela_gasto_cashback (
+    nome_cliente_id VARCHAR(51) NOT NULL,
+    nome_vendedor_note_id VARCHAR(51),
+    nome_vendedor_appleshop_id VARCHAR(51),
+    numero_compra_id INT(20) NOT NULL,
+    compra_data_id DATE NOT NULL,
+    valor_cashback_gasto_produto INT(5) NOT NULL,
+    valor_cashback_gasto_acessorio INT(5) NOT NULL,
+    valor_cashback_gasto_assistencia_tecnica INT(5) NOT NULL,
+    valor_cashback_emitido_produto INT(5) NOT NULL,
+    valor_cashback_emitido_acessorio INT(5) NOT NULL,
+    valor_cashback_emitido_assistencia_tecnica INT(5) NOT NULL,
+    PRIMARY KEY (numero_compra_id)
+);
+
+
+CREATE TABLE tabela_gasto_cashback (
+    nome_cliente_id VARCHAR(51) NOT NULL,
+    nome_vendedor_note_id VARCHAR(51),
+    nome_vendedor_appleshop_id VARCHAR(51),
+    numero_compra_id INT(20) NOT NULL,
+    compra_data_id DATE NOT NULL,
+    valor_cashback_gasto_produto INT(5) NOT NULL,
+    valor_cashback_gasto_acessorio INT(5) NOT NULL,
+    valor_cashback_gasto_assistencia_tecnica INT(5) NOT NULL,
+    valor_cashback_emitido_produto INT(5) NOT NULL,
+    valor_cashback_emitido_acessorio INT(5) NOT NULL,
+    valor_cashback_emitido_assistencia_tecnica INT(5) NOT NULL,
+    PRIMARY KEY (numero_compra_id),
+    FOREIGN KEY (nome_cliente_id) REFERENCES cliente(nome_cliente_id),
+    FOREIGN KEY (nome_vendedor_appleshop_id) REFERENCES vendedor_appleshop(nome_vendedor_appleshop_id),
+    FOREIGN KEY (nome_vendedor_note_id) REFERENCES vendedor_note(nome_vendedor__note_id),
+    FOREIGN KEY (compra_data_id) REFERENCES data_dados(compra_data_id)
+);
+
+
+
+
+
+
+
+
+
+

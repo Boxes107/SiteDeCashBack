@@ -1,0 +1,36 @@
+# Apple Shop - Banco de Dados - Seguimento :
+
+- Criação do Banco
+  - Passagem de Variaveis para Código 
+  - Criação da Tela de Login
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

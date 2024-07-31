@@ -1,0 +1,278 @@
+# Esquema com Variaveis Apple Shop :
+
+# Todas as Váriaveis :
+- Login :
+  Senha 
+- Vendedor  :
+  Vendedor Apple Shop ,
+  Vendedor Note       ,
+- Usuário  Master:
+- Loja : 
+  - Note       ,
+  - Apple Shop ,
+- Tipo de Compra :
+  - Produto   ,
+  - Acessório ,
+  - Assistência Técnica ,  
+- Voucher  ,
+- CashBack :
+  Valor      CashBack ,
+  Validade   CashBack ,
+  Quantidade CashBack ,
+- Cliente     :
+  Nome        ,
+  Cpf         ,
+  Telefone    ,
+  Nascimento  ,
+- Calendário  :
+  Mês         ,
+  Aniversário ,
+  Período     , 
+- 
+
+# IA WhatsApp :
+- Sistema de Mensagens 
+  - Integrado ao Banco de Dados 
+---------------------------------------------------------------------------||
+# Páginas :
+- Página de Login 
+- Página de Vendedor 
+- Página de Master 
+
+- Avaliar como Será a do Administrador
+---------------------------------------------------------------------------||
+# Todas as Váriaveis e Movimentacoes :
+- Login :
+  - Verificação Do Usuário no Banco de Dados --> Avisar Caso Usuário Não Exista ,
+  - Verificação Do Usúario 
+    - Tipo de Usuário 
+      - Usuário Apple Shop | Usuário Note 
+- Senha :
+  - São um Conjunto ,
+  - Verificacao de Senha para Acesso ,
+  - Recuperação :
+    - Clicar em Recuperar --> Enviar Senha para Master | 
+    - Master Tem Tela que Mostra Senhas e Botão para Editar ---> Banco de Dados a Mostra 
+      com Senhas ---> Menu de Recuperação de Senhas (Definir) --- Tela Master ---> 
+      Vendedores       
+---------------------------------------------------------------------------||
+# Funções : 
+- Tipos de Informações que Vão Aparecer na Tela dos Vendedores 
+  - Clientes que Estão ou Não Estão Cadastrados
+
+
+----------------------------------------------------------------------------||
+# Lógica do Menu de Opções : 
+
+- Diferença Entre Emissão e Cadastro : 
+  - Emissão pode ser de um cadastro já Realizado 
+  - Quando cadastra é já com valor da compra ?
+  - Emissão Não é Cadastro , 
+  - Diferença Menu de Emissão é o De Cadastrados :
+    - O De Emissão Mostrar os Nomes e as Notas Emitidas 
+	- O De Cadastros Mostra Somente o Nome dos Clientes Cadastrados  
+
+- Relação da Demonstração de Valores :
+  - Valor de CashBack Emitido   ,
+  - Valor de CashBack Resgatado ,
+
+- Aniversário :
+  - Mostrar Compras Totais de Todos os Aniversarios
+  - Mostar Compras Totais de Um Cliente 
+  - Mostrar Aniversarios Futuros e Anteriores 
+  - No Menor de Aniversario Futuro o Filtro é Automatico 
+  - Lista Geral | Lista por Cliente : 
+    - 
+
+# Sugestao Oferta Personalizada para Cliente 
+
+
+--------------------------------||
+# Duvida Relacionado a Posicionamento - Relatórios e Amostragem :  
+  - Repara Só Em Todos os Componentes da Página ,
+
+
+
+----------------------||
+#
+
+- Pop Up da Emissão 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

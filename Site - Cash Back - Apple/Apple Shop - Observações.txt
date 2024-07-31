@@ -1,0 +1,113 @@
+# Observaçoes Projeto Apple - Shop :
+
+# Dados Para Seguimento do Projeto :
+
+- Criar Banco de Dados e Todos os Triggers :
+  - Criar Front End com Os Forms Automatizados,
+  - 
+
+
+---------------------------------------------------||
+# Campo Residual Momentaneo :
+
+  - Criação Login :
+    - Formulario de Criação do Campo Vendedores  :
+      - Comando INSERT para Inserir os Dados     ,
+    - Nome :
+      - Pegar Campo Nome - Enviar Banco de Dados ,
+    - Cpf :
+      - Pegar Campo Cpf  - Enviar Banco de Dados ,
+    - Selecionar Loja :
+      - Pegar Campo Loja - Definir Para Setor Loja Note - Apple Shop ,
+
+
+---------------------------------------------------||
+# Comportamento de Componentes : 
+
+- Queda de energia tempo de salvamento 
+
+- Terminar o Esbolco Total da Pagina 
+  - Delimitar Codigo 
+
+- WhatsApp :
+  - Integrar a possbilidade dele mandar mensagens pelo sistema de automação
+
+---------------------------||
+# Marcações de Tempo :
+
+- Checagem da API WhatsApp
+  - Busca de Fala no Banco de Dados
+  - Reconhecimento de Mensagens 
+  - Modelo de Assistência Utilizando Opções
+
+
+---------------------------||
+- Reunir Todas as Paginas , Reunir Todos os Nomes , Definir Todos os Registros 
+  e suas Movimentacoes , Fazer o Esbolco de um Banco de Dados, Definir Quais 
+  Variaveis se Repetem e Não se Repetem 
+- Mostrar Complexidade do Banco de Dados
+
+- O que tem em cada página ?
+
+- Fazer todo o sistema de caixas e correlacoes para ter em maos toda a fomra do 
+projeto completo 
+
+- Exemplo : a partir do login e senha tem um codigo de registro que acompnha o valor 
+cashback para tres campos diferentes
+  - Como vai ser o sistema de redirecionamento disso 
+  - 
+
+# Tomada de Decisão Apple Shop :
+
+- Necessidades :
+  - Separação De Componentes de Cada Pagina
+  - Quais Componentes estão Presentes em Cada Página
+  - Reação de Componentes em Cada Página 
+
+- O que ocorre ao apertar entrar 
+
+
+- Vendedor que Realiza Cadastro 
+
+
+- Baixar o sistema de login para automação completa da API WhatsApp 
+  - 
+
+-------------------------------------------------------||
+# Configurações :
+
+- Movimentações de Ações Página por Página ,
+- Edições de Variáveis com Todos os Campos       : 
+  - Mostrar os Valores de Cada Campo de Variável ,
+- Criação do Banco de Dados :
+  - Escrever o Pseudocodigo de Todos os Gatilhos ,
+  - Escrever as Movimentações no Banco de Dados 
+    a Partir de Cada Campo de Página             ,  
+- 
+-------------------------------------------------------||
+# Configurações Páginas :
+
+- Página Inicial  :
+
+- Página Master   :
+
+- Página Vendedor :
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

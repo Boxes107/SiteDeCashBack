@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .logo-container {
+            text-align: center;
+        }
+        .logo {
+            width: 50px;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container input[type="text"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container input[type="submit"]:hover {
+            background-color: #555;
+        }
+        footer {
+            text-align: left;
+            padding: 20px;
+            background-color: #333; /* Alterada para a mesma cor do header */
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        footer nav {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        footer nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Logo da Apple" class="logo">
+        </div>
+    </header>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="processar_login.php" method="POST">
+            <input type="text" name="username" placeholder="Usuário" required>
+            <input type="password" name="password" placeholder="Senha" required>
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+    <footer>
+        <nav>
+            <a href="#">Sobre Nós</a>
+        </nav>
+        <nav>
+            <a href="#">Entrar em Contato com o Suporte</a>
+        </nav>
+    </footer>
+</body>
+</html>

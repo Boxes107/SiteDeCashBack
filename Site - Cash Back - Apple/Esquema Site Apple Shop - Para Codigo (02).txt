@@ -1,0 +1,144 @@
+--------------------------------------------------------------------------------||
+- Página Inicial :
+  - Login :
+    - Login Vendedor Apple Shop | Login Vendedor Note ,
+  - Senha : 
+    - Somente para Usuário Master ,
+-----------------------------------------------------------------||
+- Página Master : 
+  - Relátorios :
+    - Quantidade de Cashback Usado no Periodo de Aniversario ,
+      - Vale Compras Aniversário ,
+    - Quantidade de CashBack Utilizado e Emitidos por Mês ,
+    - Quantidade de CashBack Utilizado e Emitidos por Clientes ,
+    - Quantidade de CashBack Utilizado e Emitidos por Loja ,
+
+  - Menu de Gerenciamento de Vendedores :
+    - O Tipo de Login Define o Redirecionamento da Página , 
+    - Quanto de Cashback Cada Vendedor Vendeu ,
+    - Quanto de Cashback Todos os Vendedores Venderam , 
+      - Separar por Loja - Apple Shop/Note
+    - Quantidade de Cadastros que o Vendedor Realizou ,
+      - Calendário com Clientes Cadastrados ,
+      - Nome dos Clientes Cadastrados ,
+    - Cadastrar / Remover Vendedor :
+      - Nome  Vendedor ,
+      - Senha Vendedor ( Não Tem Senha ) 
+
+  - Sistema de Edição de Porcentagem CashBack : 
+
+
+
+-----------------------------------------------------------------||
+- Página do Vendedor :
+  - Lançar Cashback - (Indicação do Vendendor é Direto na Main Page)
+    - Tipo de Produto - Ele Insere o Nome do Produto ? 
+    - Valor da Compra | Tipo Do Produto --> Infere --> Valor de CashBack Pré Definido 
+    - Telefone Do Cliente - Nome/Cpf do Cliente
+    - Numero da Compra
+  - Debitar Cashback
+    - Valor Minimo para Gasto de Cashback
+    - Código de Confirmação
+  - Pesquisa do Cliente por Nome/Cpf
+    - Valor Necessario para Gasto de Cashback
+  - Cadastro
+    - Nome
+    - Telefone
+    - Nascimento
+    - Cpf
+-----------------------------------------------------------------||
+- Sistema do Usuário : 
+  - Quantidade de Cashback 
+  - Validade do CashBack
+  - Promoções
+    - Voucher Disponivel
+
+- IA WhatsApp :
+  - Mensagem de Boas Vindas ,
+  - Quantidade de Cashback Disponivel ,
+  - Produtos e Cashbacks Disponiveis ,
+  - Data de Aniversario ,
+  - Validade do Cashback ,
+  - Valor Necessario para Gasto de Cashback ,
+  - Data de Gastos de Cashback ,
+  - Mensagem para Falar Sobre CashBack é Valor da Compra , 
+  - Codigo de Confirmação Para Compra .
+------------------------------------------------------------------||
+# 
+
+
+
+
+
+
+
+
+------------------------------------------------------------------||
+# Esquema Site Apple Shop :
+
+- Pagina Inicial :
+  - Login
+  - Senha
+  - Cadastro
+    - Nome
+    - Cpf
+    - Nascimento
+    - Telefone
+
+- Pagina do Usuario : 
+  - Quantidade de Cashback 
+  - Validade
+  - Promoções
+
+- Pagina do Vendendor :
+  - Lançar Cashback - (Indicação do Vendendor é Direto no Login)
+    - Tipo de Produto
+    - Valor da Compra
+    - Nome/Cpf do Cliente
+    - Numero da Compra
+  - Debitar Cashback
+    - Valor Minimo para Gasto de Cashback
+    - Código de Confirmação
+  - Pesquisa do Cliente por Nome/Cpf
+    - Valor Necessario para Gasto de Cashback
+
+- IA WhatsApp :
+  - Quantidade de Cashback Disponivel
+  - Produtos e Cashbacks Disponiveis
+  - Data de Aniversario
+  - Validade do Cashback
+  - Valor Necessario para Gasto de Cashback
+  - Data de Gastos de Cashback
+
+
+- Sistema de Login 
+  - Cadastro por Telefone
+    - Senha de 04 dígitos - X 
+      - Sem senha com clonagem ou outros métodos qualquer um tem acesso a conta
+    - Senha pré definida 
+      - Sistema de recuperação de senha 
+- Como funciona o cadastro dos vendedores ? 
+  - Ele Cadastra -> Insere Nome Colado -> Gera Senha Automatica Seguindo Determinado Padrão
+    - Usar o E-mail
+  - O sistema dele pode remover ou colocar vendedores
+    - Puxar informações de vendas antes de deletar
+    - Armazenar em algum lugar as informações de vendas   
+  
+
+- Acesso Unico - Página Inicial Unica : 
+  - Login Note        - Para Todos os Vendedores 
+  - Login Apple Shop  - Para Todos os Vendedores 
+  - Login Master 
+  - Sistema para as Duas Lojas 
+      - O mesmo login para ambas as lojas ? 
+      - Separação a A Partir do Login para mostrar somente vendedores de cada loja
+      - Banco de Dados com as mesmas funcionalidades mais diferente para cada loja ? 
+      - Separação do Banco por Login
+        - Como Quer Por Loja é a Opção mais Viável
+        - Os Clientes de uma compram em outra  
+        - Só muda os vendedores que são mostrados 
+          - Login --> Login Vendedores Apple Shop | Sistema  de Seleção da Variável Vendedores | 
+            Mudança Somente no Campo Vendedores   | Passagem de Variavel Do Login para Página Inicial   
+
+    - Vendedores da Note 
+    - Vendedores da Apple Shop  

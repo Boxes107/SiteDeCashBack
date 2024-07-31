@@ -1,0 +1,67 @@
+# Apple Shop - Modelo de Gerenciamento de Pastas :
+
+----------------------------------------------------||
+meu-website/
+│
+├── frontend/
+│   ├── public/            # Arquivos estáticos públicos (HTML, CSS, JS)
+│   ├── src/               # Código-fonte do frontend
+│   └── package.json       # Dependências e scripts do frontend (por exemplo, React)
+│
+├── backend/
+│   ├── routes/            # Rotas do servidor
+│   ├── controllers/       # Controladores do servidor
+│   ├── models/            # Modelos de dados (por exemplo, Mongoose schemas)
+│   ├── middleware/        # Middlewares do servidor
+│   ├── config/            # Configurações do servidor (por exemplo, conexão com o banco de dados)
+│   └── package.json       # Dependências e scripts do backend (por exemplo, Node.js, Express)
+│
+└── database/
+    └── my-database.sql    # Arquivo de backup do banco de dados ou scripts de migração
+-----------------------------------------------------||
+meu-website/
+│
+├── frontend/
+│   ├── ...               # Estrutura de pastas do frontend
+│
+└── backend/
+    ├── domain1/
+    │   ├── routes/       # Rotas específicas do domínio 1
+    │   ├── controllers/  # Controladores específicos do domínio 1
+    │   ├── models/       # Modelos de dados específicos do domínio 1
+    │   └── ...           # Outros arquivos relacionados ao domínio 1
+    │
+    ├── domain2/
+    │   ├── routes/       # Rotas específicas do domínio 2
+    │   ├── controllers/  # Controladores específicos do domínio 2
+    │   ├── models/       # Modelos de dados específicos do domínio 2
+    │   └── ...           # Outros arquivos relacionados ao domínio 2
+    │
+    ├── shared/           # Código compartilhado entre os domínios
+    ├── config/           # Configurações do servidor
+    ├── middleware/       # Middlewares do servidor
+    └── package.json      # Dependências e scripts do backend
+
+-----------------------------------------------------||
+meu-website/
+│
+├── frontend/             # Frontend e backend compartilhando o mesmo repositório
+│   ├── public/          
+│   ├── src/             
+│   ├── routes/          
+│   ├── controllers/     
+│   ├── models/          
+│   ├── middleware/      
+│   └── package.json     
+│
+└── database/
+    └── ...              # Estrutura do banco de dados
+-----------------------------------------------------||
+
+
+
+
+
+
+
+

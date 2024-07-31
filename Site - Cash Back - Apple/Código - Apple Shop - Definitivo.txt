@@ -1,0 +1,247 @@
+# Código Apple Shop Definitivo
+
+# Login
+
+# Vendedor 
+
+# Master
+
+
+- Formulario para criação de cadastro :
+- Criar no Firebase o Sistema de Login e Enviar o Form
+  - Correlacionar o Login com o Banco de Dados
+  -
+
+- Correlacionar e Dividir os Dois Sistemas de Login :
+  - 
+
+- Sistema de Redirecionamento União e Separação de Contas :
+  - 
+# Menu de Gerenciamento de Vendedores :
+    - Mostrar Vendedores :
+      - Selecionar Apple Shop | Note ,
+        - Mostrar | Puxar Lista de Nome de Vendedores ,
+        - Mudar Senha , 
+    - Adicionar | Remover Vendedor :
+      - Caminho para Salvar Dados do Vendedor | Remover Nome Somente ,
+    - Adicionar Vendedor : 
+      - Nome ,
+      - Cpf  ,
+      - Selecionar Loja : Apple Shop | Note .
+
+
+
+--------------------------------------------------------------------------------||
+- Página Inicial :
+# Login :
+  - Login Vendedor :
+  - Senha :
+    - Redirecionar Dados --> Selecionar Campos de Dados --> Código Generalizado para
+      Edição é Gerenciamento Campos de Dados ,
+    - A Partir da Criação do Banco a Seleção Mostra Todo o Conjunto de Variaveis 
+      Prontas para Edição | Inserção 
+      - Modificação Somente Pelo Usuário Master 
+   - Login Master :
+     - Página de Comando Diferente | Recolocação de Código | 
+     - Comando de ADMIN Banco de Dados Inserido no BackEnd do Código 
+       - Posterior a Validação do Login 
+     - Senha Master :
+       - Edição Pelo Coder do Banco | Back End Web | 
+       - Enviar para Email | Dispositivo Movel :
+         - Código de E-Mail Master para Conexão Entre Contas 
+         - 
+- Menu de Gerenciamento de Vendedores :
+  - Administração Login :
+     - Administração Login :
+       - Loja Apple Shop :
+         - Login ,
+         - Senha ,
+           - Login e Senha --> Comando Identificar Banco De Dados --> 
+                               Comando Mostra Banco de Dados , 
+           - Comando de Identificação --> Analise de Letras --> Reconhecimento de
+             Letras ---> Seleção de Fileira ,
+       - Loja Note :
+         - Login ,
+         - Senha ,
+           - Login e Senha --> Comando Identificar Banco De Dados --> 
+                               Comando Mostra Banco de Dados , 
+           - Comando de Identificação --> Analise de Letras --> Reconhecimento de
+             Letras ---> Seleção de Fileira ,
+     - Selecionar Loja  :
+       - Comando Selecionar Apple Shop - Note :
+         - Comando ADD Vendedor :
+           - Selecionar Loja :
+           - Nome | Cpf | 
+           - Comando ADD 
+             - SELECT ROW Vendedores ,
+             - CREATE NEW ROW ,
+               - Criar Tabela :
+               - Vendedor_Loja , Vendedor_Nome , Vendedor_Cpf ,
+         - Comando DELETE Vendedor :
+           - Comando SEARCH para buscar Vendedor_Nome ,
+           - Comando DELETE ROW para deletar Tabela_Vendedor_Nome ,
+             - Comando DELETE somente Deleta Nome - Remover Comando de Dados
+               Gerais
+         - Comando SEARCH Vendedor :
+           - Selecão SELECT para Buscar Campos Nome_Vendedor | Loja_Vendedor , 
+           - Enviar Comando SELECT do Banco de Dados para Página Web , 
+
+-----------------------------------------------------------------||
+# Página Master : 
+
+  # Menu de Gerenciamento de Vendedores :
+
+
+
+
+  # Sistema de Edição | CashBack | Voucher :
+  
+  
+
+  # Relatórios CashBack | Voucher :
+
+
+
+
+  # Aniversário :
+
+
+
+  # Voucher Comum :
+
+
+
+  # Quantidade de CashBack Resgatado :
+
+
+
+
+
+    
+  # Quantidade de CashBack Resgatado é Emitido : 
+
+
+
+
+
+
+  # Quantidade de CashBack Emitido :
+
+
+
+
+
+  # Dados Gerais de CashBack Emitido por Vendedor :
+
+
+
+
+
+
+
+-----------------------------------------------------------------||
+- Fazer edicao para cashback multiplo
+
+# Página do Vendedor :
+
+  # Página de Cadastro  :
+
+
+
+
+
+  # Página de Lançar CashBack :
+
+
+
+
+
+
+  # Página de Debitar Cashback :
+
+
+
+
+    
+
+  #  
+ 
+
+
+
+  - Lançar Cashback :
+
+
+
+    
+-----------------------------------------------------------------||
+ - Página de Mensagens :  
+
+
+
+
+ 
+ - IA WhatsApp :
+
+
+
+
+
+
+---------|| 
+
+
+------------------------------------------------------------------||
+# 
+
+
+
+
+
+
+
+
+------------------------------------------------------------------||
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

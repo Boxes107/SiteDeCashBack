@@ -1,0 +1,105 @@
+# Codigo Apple Shop - Analise :
+
+- Send_Data ( )
+- Function Send_Data ( ) 
+
+----------------------------------------||
+
+- getElementById 
+
+- 
+
+
+
+---------------------------------------||
+
+- Definir as Variaveis que Vão Possuir Troca
+  - Inserir Dentro da Função de Comunição 
+
+
+- dbUsername
+- dbPassword
+- dbname 
+
+- variavel if para testar condição da conexão 
+
+- By partitioning data across multiple tables, businesses can improve query 
+performance, which is crucial when working with large data sets.
+
+- By avoiding subqueries and nested queries, businesses can significantly 
+enhance query performance, making it easier to process large volumes of data.
+  - Criar um Sistema Para Inserção de Bibliotecas Multiplas 
+    - Criar Varias Tabelas _01 , _02 , _03
+    - Automatizar os gatilhos por identificação da região de tabelas aonde
+      a informação está contida
+      - 
+-Another critical technique is query optimization, which involves using indexing, 
+ query caching, and stored procedures to improve query performance.
+
+-MySQL supports various compression techniques, such as row-level compression and page-level
+ compression, allowing businesses to choose the best option for their specific 
+ needs.
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

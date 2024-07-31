@@ -1,0 +1,296 @@
+# Código - Apple Shop :
+
+# Página Inicial :
+  # Login :
+    - Login Vendedor Apple Shop | Login Vendedor Note | Login Master ,
+      - O Tipo de Login Define o Redirecionamento da Página  
+  - Senha : 
+    - Somente para Usuário Master .
+
+----------------||
+# Login : 
+- Login Note :
+  - Mostra Somente Vendedores da Note.
+  - Guarda as Informações dos Vendedores na Classe Note.
+
+- Login Apple Shop :
+  - Mostra Somente Vendedores da Apple Shop. 
+  - Guarda as Informações dos Vendedores na Classe Apple Shop.
+
+# Observações :
+- O Relatório vai pegar dados de Login de Ambos os Vendedores.
+  - Banco de Dados Separado ? 
+    - Nâo Existe Banco de Dados Separado.
+- Método de Busca de Dados no Campo de Relátorio.
+  - Método de Busca para Vendedores Note.
+  - Método de Busca para Vendedores Apple Shop.
+
+- É a Mesma Página Tanto para Vendedores Note, Quanto Para Vendedores Apple Shop :
+  - Só Muda os Campos Aonde Serão Guardados as Informações dos Vendedores ,
+  - Login Redireciona é Seleciona o Campo que Mostram os Vendedores       ,
+
+
+
+- Classe Global para Herdar as Informações no Banco de Dados; 
+
+------------------------------------------------------------------------------||
+# Página Master : 
+
+  # Menu de Gerenciamento de Vendedores :
+    - Mostrar Vendedores :
+      - Selecionar Apple Shop | Note ,
+        - Mostrar | Puxar Lista de Nome de Vendedores ,
+        - Mudar Senha , 
+    - Adicionar | Remover Vendedor :
+      - Caminho para Salvar Dados do Vendedor | Remover Nome Somente ,
+    - Adicionar Vendedor : 
+      - Nome ,
+      - Cpf  ,
+      - Selecionar Loja : Apple Shop | Note .
+--------------------------------------------------------------------||
+  # Sistema de Edição | CashBack | Voucher :
+    - Porcentagem CashBack : 
+    - Porcentagem de Voucher : 
+
+# -------- ||
+- Produto :
+  - Porcentagem :
+  - Valor para Gasto : 
+    - Valor CashBack ,
+    - Valor de Uso CashBack ,
+ 
+- Acessório :
+
+
+- Assistência Tecnica :
+
+# ----------||
+- Edição de Porcentagem : 
+  - Três Campos De Edição :
+    - Produto | Acessório | Assistência Técnica |
+    - Váriaveis Iguais : Porcentagem | Valor CashBack | Valor de Uso CashBack |
+    
+- Editar no WebSite ---> Passar o Comando para Banco 
+  - Qual é o Sistema ?
+    - Enviar a Edição --> Edição Roda no SQL ---> Requisição Volta a WebSite
+  - Data Binding        
+
+- 
+
+
+--------------------------------------------------------------------||
+  # Relatórios CashBack | Voucher :
+--------------------------------------------------------------------||
+  # Aniversário :
+    # Selecionar Loja :
+      - Ambas | Seleção Padrão ,
+      - Note ,
+      - Apple Shop , 
+    # Mostrar Datas no Calendário :
+      - Aniversários  : Futuros     | Anteriores | Todas ,  
+      - Mostrar Valor : Por Período | Todas as Compras   ,
+        - Tipo de Compra Realizada :
+          - Lista com Tipo de Compra de Todos os Clientes por Dia ou Periodo , 
+    # Mostrar Valor Por Cliente :
+      - Selecionar Nome do Cliente :
+        - Mostra do Consumo no Dia  ,
+        - Mostra os Dias Automaticamente , 
+    # Voucher de Aniversário :
+--------------------------------------------------------------------||
+  # Voucher Comum :
+--------------------------------------------------------------------||
+  # Quantidade de CashBack Resgatado :
+    - Período : 
+      - Durante o Dia ,  - Durante a Semana , - Durante o Mês Passado, 
+      - Durante o Mês Atual , - Durante Todo o Período , - Selecionar Período , 
+    - Tipo de Compra :
+      - Produto | Acessório | Assistência Técnica , 
+      - Quantidade de CashBack Resgatado , 
+    - Barra Lateral para Mostrar Nomes : 
+      - Mostra Nome Cliente  ,
+      - Mostra Nome Vendedor ,
+      - Mostra Soma Total do Tipo da Compra .
+--------------------------------------------------------------------||    
+  # Quantidade de CashBack Resgatado é Emitido : 
+    - Período : 
+      - Durante o Dia ,  - Durante a Semana , - Durante o Mês Passado, 
+      - Durante o Mês Atual , - Durante Todo o Período , - Selecionar Período , 
+      - Contém Data dos Débitos de CashBack e dos Usos de Cashback :
+        - No Menu , Calendário, Aparecem as Emissões é Débitos .
+        - 
+    - Tipo de Compra :
+      - Produto | Acessório | Assistência Técnica , 
+      - 
+
+    - Calendário | Seleção Padrão do Período Total :
+    - Gráfico Pode ter Dias de Só Emissão e de Só Utilização ,
+      - Durante o Dia , Durante a Semana , Durante o Mês Passado , 
+        Durante o Mês Atual , Durante Todo o Período , Selecionar Período.
+      - Barra Lateral para Mostrar Nomes --> Vendedores | Clientes . Todos.
+      - Valor de CashBack Emitido. 
+--------------------------------------------------------------------||
+  # Quantidade de CashBack Emitido :
+    - Dados Gerais de CashBack Emitido :
+      - Durante o Dia , Durante a Semana , Durante o Mês Passado , 
+        Durante o Mês Atual , Durante Todo o Período , Selecionar Período.
+      - Barra Lateral para Mostrar Nomes --> Vendedores | Clientes . Todos.
+--------------------------------------------------------------------||
+  # Dados Gerais de CashBack Emitido por Vendedor :
+    - Selecionar Vendedor | Emissão : 
+      - Durante o Dia , Durante a Semana , Durante o Mês Passado , 
+        Durante o Mês Atual , Durante Todo o Período , Selecionar Período.
+    - Selecionar Vendedor | Quantidade de Cadastros Realizados :  
+      - Durante o Dia , Durante a Semana , Durante o Mês Passado ,
+        Durante o Mês Atual , Durante Todo o Período , Selecionar Período.
+      - Barra Lateral para Mostrar Nomes --> Vendedores | Clientes . Seleção.
+    - Quantidade de Cashback Utilizado é Valor da Venda. 
+
+------------------------------------------------------------------------------||
+# Página do Vendedor :
+
+  # Página de Cadastro  :
+    - Verificar Cliente , 
+    - Cadastrar Cliente :
+      - Nome ,
+      - Cpf  ,
+      - Telefone   ,  
+      - Nascimento ,
+--------------------------------------------------------------------||
+  # Página de Lançar CashBack :
+    - Checar CashBack Disponivel :
+      - Inserir Nome Do Cliente | Cpf ,
+        - Verificar Existência no Banco de Dados ,
+        - Realizar Cadastro ?
+          - Nome ,
+          - Cpf  ,
+          - Telefone   ,
+          - Nascimento ,
+      - Ver Saldo de CashBack ,
+    - Tipo de Compra :
+      - Cálcular CashBack :
+        - Produto ,
+        - Acessorio ,
+        - Assistência Têcnica , 
+--------------------------------------------------------------------||
+  # Página de Debitar Cashback :
+      - Selecionar Cliente :
+        - Checar Existencia por Nome ,
+        - Checar Saldo de CashBack   , 
+        - Mostrar Valor Minimo para Gasto de Cashback , 
+    - Tipo de Compra :
+        - Produto :
+        - Acessorio :
+        - Assistência Tecnica : 
+          - Inserir Valor por Tipo de Compra :
+            - Campo Separado por Cada Tipo   ,
+          - Inserir o Valor do CashBack | Escolher Saldo :
+            - Debitar Saldo do Banco de Dados , 
+
+-----------------------------------------------------------------------------||
+# API WhatsApp :
+ 
+ - Página de Mensagens :  
+  - Sistema do Usuário : 
+   - Quantidade de Cashback ,
+   - Validade   do CashBack ,
+   - Promoções
+     - Voucher Disponivel
+ 
+ - IA WhatsApp :
+  - Mensagem de Boas Vindas ,
+   - Quantidade de Cashback Disponivel ,
+   - Produtos e Cashbacks Disponiveis ,
+   - Data de Aniversario ,
+   - Validade do Cashback ,
+   - Valor Necessario para Gasto de Cashback ,
+   - Data de Gastos de Cashback ,
+   - Mensagem para Falar Sobre CashBack é Valor da Compra , 
+   - Codigo de Confirmação Para Compra .
+
+---------|| 
+- Mensagem uma Semana Antes do Aniversário
+- Mensagem um Dia Antes do Aniversário
+
+
+
+------------------------------------------------------------------||
+# 
+
+
+
+
+
+
+
+
+------------------------------------------------------------------||
+# Esquema Site Apple Shop :
+
+- Sistema de Login 
+  - Cadastro por Telefone
+    - Senha de 04 dígitos - X 
+      - Sem senha com clonagem ou outros métodos qualquer um tem acesso a conta
+    - Senha pré definida 
+      - Sistema de recuperação de senha 
+- Como funciona o cadastro dos vendedores ? 
+  - Ele Cadastra -> Insere Nome Colado -> Gera Senha Automatica Seguindo Determinado Padrão
+    - Usar o E-mail
+  - O sistema dele pode remover ou colocar vendedores
+    - Puxar informações de vendas antes de deletar
+    - Armazenar em algum lugar as informações de vendas   
+  
+
+- Acesso Unico - Página Inicial Unica : 
+  - Login Note        - Para Todos os Vendedores 
+  - Login Apple Shop  - Para Todos os Vendedores 
+  - Login Master 
+  - Sistema para as Duas Lojas 
+      - O mesmo login para ambas as lojas ? 
+      - Separação a A Partir do Login para mostrar somente vendedores de cada loja
+      - Banco de Dados com as mesmas funcionalidades mais diferente para cada loja ? 
+      - Separação do Banco por Login
+        - Como Quer Por Loja é a Opção mais Viável
+        - Os Clientes de uma compram em outra  
+        - Só muda os vendedores que são mostrados 
+          - Login --> Login Vendedores Apple Shop | Sistema  de Seleção da Variável Vendedores | 
+            Mudança Somente no Campo Vendedores   | Passagem de Variavel Do Login para Página Inicial   
+
+    - Vendedores da Note 
+    - Vendedores da Apple Shop  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

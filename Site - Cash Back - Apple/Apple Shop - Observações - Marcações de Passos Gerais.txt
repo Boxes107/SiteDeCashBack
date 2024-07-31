@@ -1,0 +1,139 @@
+# Apple Shop - Observações - Marcações de Passos Gerais :
+
+# 31 03 24 :
+
+- Ajuste de Todas as Funções de Inserção de Dados em Tabelas 
+
+- Funções de Criação de Tabelas Após a Inserção de Todos os Dados
+
+- Sistema de Verificação de Usuario 
+  - Realizar multiplas inserções 
+
+- Implementar Verificação de CPF 
+
+
+-----------------------------------------------||
+- Preencher todos os Dados é apertar em enviar*
+
+
+- Configuração do Botão de Envio é Ajuste do Comando SQL para a proxima tabela
+
+
+
+-----------------------------------------------||
+$sql = "INSERT INTO cliente (nome_cliente_id, cpf_cliente_id, data_aniversario, cliente_telefone, cliente_cashback) 
+            VALUES ('$nome', '$cpf', '$dataAniversario', '$telefone', '$cashback')";
+
+- Remover o cliente_cashback, e realizar função futuramente
+
+
+
+-----------------------------------------------||
+#
+
+- Testar Envio das Váriaveis SQL, Editar Comando de Envio para Variavéis 
+  Vazias 
+
+- Criar a Função de Conexão com o Banco de Dados :
+  - Ver Atributos da função de Envio da Página HTML
+  - Ver Diferença Entre uma Função de Envio e Uma Função de Envio de Formulario
+
+- 
+
+
+------------------------------------------------||
+- Quantidade_Vendas 
+  - Quantidade de Vendas que cada vendedor fez em determinado periodo
+  - Vezes que um Vendedor Emitiu CashBack
+
+- Definir um Campo
+
+
+- Vendedor_Tipo_Loja
+  - Emissão_Dia
+  - Debito_Dia
+
+- Tabela de Registro de Emissão é Debito
+  - Cliente_Nome  ,
+  - Vendedor_Nome ,
+  - Compra_Data   ,
+  - Valor_Cashback_Emitido_Produto                   ,
+  - Valor_Cashback_Emitido_Acessorio                 ,
+  - Valor_Cashback_Emitido_Assistencia_Tecnica       , 
+
+
+- Quantidade_Vendas :
+  - Vendedor_Nome   ,
+  - Cliente_Nome    ,
+  - Compra_Data     ,
+  - Valor_Cashback_Gasto_Produto               ,
+  - Valor_Cashback_Gasto_Acessorio             ,
+  - Valor_Cashback_Gasto_Assistencia_Tecnica   ,   
+  - Valor_Cashback_Emitido_Produto                   ,
+  - Valor_Cashback_Emitido_Acessorio                 ,
+  - Valor_Cashback_Emitido_Assistencia_Tecnica       , 
+
+
+
+
+# Compra :   
+  - Nome_Cliente 
+  - Valor_Compra
+  - Valor_CashbBack
+
+
+- Quantidade de CashBack Abatido 
+
+- Saldo do Cliente Atual 
+  - Só Atual
+
+- Compra tem que possuir nome do cliente e data
+  - Relacionar a chave nome do cliente com o campo da existência da tabela
+  - 
+
+
+- Fazer o Campo de soma e envio de valor cashback para o campo 
+  cliente_cashback
+
+- 
+---------------------------------------------------------------------------||
+- Site Local - Passagem para Servidor Posterior - Código Local Exato - 
+  - Mesma Coisa - Posicionado ao Servidor 
+
+- Gatilho Insert com Javascript no Form
+  - Ou Uma Função Separada para Conferir Inserção
+  - Arranjo posterior somente código base
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

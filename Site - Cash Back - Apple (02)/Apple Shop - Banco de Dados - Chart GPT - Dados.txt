@@ -1,0 +1,122 @@
+# Apple Shop - Banco de Dados - Chart GPT - Dados :
+
+- Edição do comando de observação para diretorios e testes
+
+
+-------------------------------------------------||
+Para manter testes rodando em plano de fundo junto ao código principal, 
+você geralmente usaria uma ferramenta de teste como o Mocha, Jest ou similar, 
+junto com uma ferramenta de observação de arquivos como o nodemon.
+
+npm install --save-dev mocha nodemon
+
+1. Em seguida, você pode adicionar scripts ao seu arquivo package.json 
+para iniciar os testes
+
+"scripts": {
+  "start": "node server.js",  // Supondo que seu arquivo principal seja server.js
+  "test": "mocha",           // Para executar os testes uma vez
+  "test:watch": "nodemon --exec 'npm test'" // Para executar os testes em plano de fundo e observar por mudanças
+}
+------------------------------------------------||
+Armazenamento de Credenciais:
+
+1. O banco de dados armazena as informações de login dos usuários, como nomes de 
+usuário e senhas.
+Geralmente, as senhas são armazenadas de forma criptografada ou hash para 
+proteger a segurança dos usuários em caso de violação de dados.
+Verificação de Credenciais:
+
+2. Quando um usuário tenta fazer login, o sistema verifica as credenciais 
+fornecidas com as informações armazenadas no banco de dados.
+Isso envolve comparar o nome de usuário fornecido com o nome de usuário 
+armazenado e verificar se a senha fornecida corresponde à senha armazenada.
+
+- Como relacionar o Login com o Banco de Dados
+  - Como o Login um   vai ser direcionado a tal parte do banco
+  - Como o Login dois vai ser direcionado a tal parte do banco
+
+
+-----------------------------------------------||
+# Conclusões :
+
+- Inicialização da Conexão:
+
+A primeira parte é a inicialização da conexão com o banco de dados.
+Isso geralmente envolve a criação de uma conexão com o banco de dados usando 
+as credenciais apropriadas, como nome de usuário, senha, host, etc.
+Execução de Consultas ou Comandos SQL:
+
+Após estabelecer a conexão, o programa pode executar consultas SQL ou comandos
+de atualização/insersão/remoção de dados no banco de dados.
+Isso inclui a criação de objetos de consulta (como um cursor em Python) e a
+execução de consultas SQL para recuperar, inserir, atualizar ou excluir dados
+do banco de dados.
+Processamento de Resultados:
+
+Depois de executar uma consulta, é necessário processar os resultados retornados 
+pelo banco de dados.
+Isso pode envolver iterar sobre as linhas retornadas por uma consulta SELECT e 
+realizar operações com os dados, como exibição na interface do usuário, cálculos
+ou armazenamento em variáveis para uso posterior.
+
+- Tratamento de Erros:
+
+É importante incluir tratamento de erros ao trabalhar com conexões de banco de 
+dados. Isso inclui lidar com erros de conexão, erros de consulta e outros 
+possíveis problemas que possam surgir durante a interação com o banco de dados.
+O tratamento de erros pode incluir o uso de blocos try-except para capturar 
+exceções e tomar medidas apropriadas em caso de erro.
+Fechamento da Conexão:
+
+Após concluir todas as operações no banco de dados, é importante fechar a 
+conexão para liberar recursos do sistema.
+Isso garante que não haja vazamentos de recursos e que a conexão com o 
+banco de dados seja encerrada corretamente.
+-------------------------------------------------------------------------------||
+- Sistema de Backup Diario ou A Cada Volume com Informações sobre Cashback
+
+- Fazer a sessão de conexão como variavel isolada e depois colocar no código
+  - 
+<?php
+// Conexão com o banco de dados (substitua os valores conforme necessário)
+$servername = "localhost";
+$username = "seu_usuario";
+$password = "sua_senha";
+$dbname = "seu_banco_de_dados";
+---------------------------------||
+import mysql.connector
+
+# Configurações de conexão com o banco de dados
+config = {
+  'user': 'seu_usuario',
+  'password': 'sua_senha',
+  'host': 'localhost',
+  'database': 'seu_banco_de_dados',
+  'raise_on_warnings': True
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

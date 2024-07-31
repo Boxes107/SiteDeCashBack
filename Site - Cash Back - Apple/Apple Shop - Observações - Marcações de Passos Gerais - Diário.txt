@@ -1,0 +1,121 @@
+# Apple Shop - Observações - Marcações de Passos Gerais - Diário :
+
+# Debitar CashBack :
+
+- 
+
+
+
+
+-------------------------------------------------------------||
+- Desenrolar API WhatsApp 
+- Desenrolar Funções de Preenchimento de Tabelas
+- Desenrolar Filtros
+- Desenrolar Gatilhos
+
+- Criação de um ID numerico para identificar clientes
+-------------------------------------------------------------||
+# Página do Vendedor :
+
+- Modelo de Lista já Está Pronto , Front - End de Cada Listra , 
+- Registro, somente alterar função de envio
+
+- Checar CashBack :
+  - Pesquisa do Nome no Banco de Dados 
+  - CheckBack da Conta já tem que estar pronto
+  - Sistema de Checagem do Saldo de CashBack
+
+-----||
+- Tipo de Compra :
+  - Função de Inserção de CashBack ,
+  - Separação na Tabela de Produto | Acessorio | Assistencia Tecnica | 
+    - Produto             % Valor = 
+    - Acessorio           % Valor =
+    - Assistencia Tecnica % Valor =  
+                       Soma Valor =
+
+    - Menu de Edição do Valor | Demonstração no Menu da Própria | Página do Vendedor
+    - 
+  - 
+
+# Sistema de Edição | CashBack | Voucher :
+  - Porcentagem CashBack : 
+  - Porcentagem de Voucher : 
+
+# 
+  - Gasto Minimo de Cashback :
+    - Produto | Assistência Tecnica | Acessório |  
+    - Produto     % Tal
+    - Assistencia % Tal
+    - Acessorio   % Tal
+
+# Tabela Gasto CashBack :
+  - Algoritmo para Criar é Salvar por Dia ;
+
+
+
+-------------------------------------------------------------||
+# Criação do Sistema de Datas :
+
+- Variavel de Data vai ser definida pelo banco de dados e inserida no sistema
+
+- Criação de Uma Função de Data para Cada Cliente, ou uma função global a ser 
+  manipulada conforme a necessidade ?
+
+- Ecossistema de Tabelas - Formato Generalizado para Tabelas - Backup da Tabela
+  Contendo todo os Numeros Salvos 
+
+- 
+
+
+--------------------------------------------------------------||
+# Sistema de Biblioteca Para Separação de Aniversários :
+
+- Na hora do cadastro do cliente identificar mês de aniversario, registrar 
+  ele na tabela do devido mês
+  - Sistema Global com Todos os Clientes 
+    - Sistema Local com Clientes Separados por Mês de Aniversário
+
+- Melhor deixar o sistema de registro somente para uma tabela global
+  - Criar um sistema que separe todas essas tabelas 
+  - Jogar no sistema de gatilhos 
+
+-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

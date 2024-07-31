@@ -1,0 +1,151 @@
+Leve o seguinte código como exemplo, ajuste a navbar "nav-relatorios-cashback" 
+para que a mesma somente mostre o subtitulos em caso de clique, e os recue em
+caso de um outro clique
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            overflow-y: scroll; /* Adiciona scroll vertical */
+        }
+        header, footer {
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .logo-container {
+            display: flex;
+            align-items: flex-end;
+        }
+        .logo {
+            width: 50px;
+        }
+        .page-title {
+            margin-left: 10px;
+            margin-bottom: 0;
+            color: #fff;
+            font-size: 18px;
+        }
+        .nav {
+            padding: 20px;
+            background-color: #444;
+            color: #fff;
+            margin-bottom: 20px; /* Aumenta o espaço entre as navbars */
+        }
+        .navbar {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+        }
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav ul li {
+            display: inline;
+            margin-right: 20px; /* Aumenta o espaço entre os itens do menu */
+        }
+        .nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Logo da Apple" class="logo">
+            <div class="page-title">Página Master</div>
+        </div>
+    </header>
+    <nav class="nav" id="nav-gerenciamento-vendedores">
+        <ul>
+            <li><a href="#nav-gerenciamento-vendedores">Menu de Gerenciamento de Vendedores</a></li>
+        </ul>
+    </nav>
+    <nav class="navbar" id="nav-relatorios-cashback">
+            <h2>Relatórios CashBack</h2>
+            <ul class="subtitles">
+              <li>Subtítulo 1</li>
+              <li>Subtítulo 2</li>
+              <li>Subtítulo 3</li>
+            </ul>
+    </nav>
+    <nav class="nav" id="nav-voucher">
+        <ul>
+            <li><a href="#nav-voucher">Voucher</a></li>
+        </ul>
+    </nav>
+    <nav class="nav" id="nav-aniversario">
+        <ul>
+            <li><a href="#nav-aniversario">Aniversário</a></li>
+        </ul>
+    </nav>
+    <nav class="nav" id="nav-voucher-comum">
+        <ul>
+            <li><a href="#nav-voucher-comum">Voucher Comum</a></li>
+        </ul>
+    </nav>
+    <nav class="nav" id="nav-quantidadedecashbackresgatado">
+        <ul>
+            <li><a href="#nav-quantidadedecashbackresgatado">Quantidade de CashBack Resgatado</a></li>
+        </ul>
+    </nav>
+    <nav class="nav" id="nav-quantidadedecashbackresgatadoeemitido">
+        <ul>
+            <li><a href="#nav-quantidadedecashbackresgatadoeemitido">Quantidade de CashBack Resgatado é Emitido</a></li>
+        </ul>
+    </nav>
+    <nav class="nav" id="nav-tipodecompra">
+        <ul>
+            <li><a href="#nav-tipodecompra">Tipo de Compra</a></li>
+        </ul>
+    </nav>
+    <nav class="nav" id="nav-quantidadedecashbackemitido">
+        <ul>
+            <li><a href="#nav-quantidadedecashbackemitido">Quantidade de CashBack Emitido</a></li>
+        </ul>
+    </nav>
+    <nav class="nav" id="nav-dadosgeraisdecashbackemitidoporvendedor">
+        <ul>
+            <li><a href="#nav-dadosgeraisdecashbackemitidoporvendedor">Dados Gerais de CashBack Emitido por Vendedor</a></li>
+        </ul>
+    </nav>
+    <nav class="nav" id="nav-sistemadeedicaocashbackvoucher">
+        <ul>
+            <li><a href="#nav-sistemadeedicaocashbackvoucher">Sistema de Edição | CashBack | Voucher</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Logo da Apple" class="logo">
+            <div class="page-title">Página Master</div>
+        </div>
+    </footer>
+    
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const navbars = document.querySelectorAll(".navbar");
+      
+          navbars.forEach(navbar => {
+            navbar.addEventListener("click", function() {
+              navbars.forEach(nav => nav.querySelector(".subtitles").classList.remove("active"));
+              this.querySelector(".subtitles").classList.toggle("active");
+            });
+          });
+        });
+      </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+# Apple Shop - Observações - Marcações de Passos Gerais :
+
+# Compra :   
+  - Nome_Cliente 
+  - Valor_Compra
+  - Valor_CashbBack
+
+
+- Quantidade de CashBack Abatido 
+
+- Saldo do Cliente Atual 
+  - Só Atual
+
+- Compra tem que possuir nome do cliente e data
+  - Relacionar a chave nome do cliente com o campo da existência da tabela
+  - 
+
+
+- Fazer o Campo de soma e envio de valor cashback para o campo 
+  cliente_cashback
+
+- 
+
+
+
+---------------------------------------------------------------------------||
+- Site Local - Passagem para Servidor Posterior - Código Local Exato - 
+  - Mesma Coisa - Posicionado ao Servidor 
+
+- Gatilho Insert com Javascript no Form
+  - Ou Uma Função Separada para Conferir Inserção
+  - Arranjo posterior somente código base
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

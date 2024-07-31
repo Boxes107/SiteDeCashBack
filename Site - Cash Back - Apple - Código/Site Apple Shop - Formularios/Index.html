@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inserção de Dados</title>
+</head>
+<body>
+
+<h1>Formulário de Inserção de Dados</h1>
+
+<form id="formulario" onsubmit="enviarDados(); return false;">
+    <label for="valor1">Valor 1:</label>
+    <input type="text" id="valor1" name="valor1"><br><br>
+
+    <label for="valor2">Valor 2:</label>
+    <input type="text" id="valor2" name="valor2"><br><br>
+
+    <label for="valor3">Valor 3:</label>
+    <input type="text" id="valor3" name="valor3"><br><br>
+
+    <input type="submit" value="Enviar">
+</form>
+
+<form id="formulario1" onsubmit="enviarDados('formulario1'); return false;">
+    <!-- Campos do formulário 1 -->
+</form>
+
+<form id="formulario2" onsubmit="enviarDados('formulario2'); return false;">
+    <!-- Campos do formulário 2 -->
+</form>
+
+
+<script>
+function enviarDados() {
+    var valor1 = document.getElementById("valor1").value;
+    var valor2 = document.getElementById("valor2").value;
+    var valor3 = document.getElementById("valor3").value;
+
+    // Requisição AJAX para chamar a função PHP
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "funcao_inserir_dados.php", true);
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            alert(xhr.responseText);
+        }
+    };
+    xhr.send("valor1=" + valor1 + "&valor2=" + valor2 + "&valor3=" + valor3);
+}
+</script>
+
+<script>
+    function enviarDados(formularioId) {
+    var formulario = document.getElementById(formularioId);
+    var formData = new FormData(formulario);
+
+    // Requisição AJAX para enviar os dados do formulário
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "processar_formulario.php", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+            alert(xhr.responseText);
+        }
+    };
+    xhr.send(formData);
+}
+</script>
+
+
+
+
+</body>
+</html>

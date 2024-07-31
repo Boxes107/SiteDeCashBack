@@ -1,0 +1,51 @@
+# Apple Shop - Banco de Dados :
+
+# Vendedor_AppleShop     : 
+  - Nome_Vendedor        ,
+  - Cpf_Vendedor         ,  
+
+# Vendedor_Note          : 
+  - Nome_Vendedor        ,
+  - Cpf_Vendedor         ,              
+  
+# Cliente                :
+  - Cliente_Nome         ,
+  - Cliente_Cpf          ,
+  - Cliente_Aniversario  ,
+  - Cliente_Telefone     ,
+  - Cliente_Cashback     , 
+
+	
+
+# Tabela Gasto CashBack : 
+  - Cliente_Nome        ,
+  - Vendedor_Nome       , 
+  - Número_Compra       , 
+  - Compra_Data         , 
+  - Valor_Cashback_Gasto_Produto               ,
+  - Valor_Cashback_Gasto_Acessorio             ,
+  - Valor_Cashback_Gasto_Assistencia_Tecnica   ,   
+  - Valor_Cashback_Emitido_Produto                   ,
+  - Valor_Cashback_Emitido_Acessorio                 ,
+  - Valor_Cashback_Emitido_Assistencia_Tecnica       , 
+
+
+----------------------------------------------------------------------||
+
+# Quantidade_Vendas :
+  - Selecionar a Tabela Gasto CashBack  ,
+  - Select no Vendedor Nome             ,
+    - Contar Quantas Tabelas Existem    ,
+  - Select no Vendedor Nome             :
+   - Select em Cada Tabela Valor | Valor_Cashback_Gasto | Valor_Cashback_Emitido | 
+   - Comando de Soma Com Comando Select ,
+
+# ValorVendido_Dia  :
+  - Select na Tabela Gasto Cashback   :
+  - Select na Fileiras de Valor       ,
+
+# Vendedor_Note | Vendedor_AppleShop  :
+  - Seleção a Partir do Select Table  ,
+
+
+

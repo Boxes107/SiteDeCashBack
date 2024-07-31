@@ -1,0 +1,127 @@
+# Apple Shop - Banco de Dados - Chart GPT - Exemplares de Código :
+
+- Checagem de Valor Minimo Para CashBack : 
+  - Padrão de Definição Dentro do Banco de Dados :
+    - Modelo de Inserção 
+      - Inserir para Cada Tal Valor, Tal Quantidade de CashBack Pode Ser Gasta
+      - Tal Valor :
+        - 10 Reais | 2 Reais | 
+        - Cálculo :
+          - 150  --> 150 | Valor Base ----> Valor Possivel 
+          - ValorMinimo_CashBack  ----> Insere No Campo Front End 
+            - Puxa do Banco Insere Valor
+            - Cálculo 
+
+- Valor de Cada Compra Separada na Tabela :
+  - Valor_cashback_produto                   ,
+  - Valor_cashback_acessorio                 ,
+  - Valor_cashback_assistencia_tecnica       ,
+
+- Valores Gastos | Valores Emitidos :
+  - Cliente Usa CashBack --> CashBack Vai para Valor de Gasto 
+  - Valor de Gasto vai Para Valor de Data 
+
+- Tabela Gasto CashBack : 
+  - Cliente_Nome        ,
+  - Compra_Data         , 
+ 
+
+
+---------------------------||
+# Tipo_de_compra :
+  - Tipo_de_compra_produto         :
+    - Valor_cashback_produto       ,
+  - Tipo_de_compra_acessorio       :
+    - Valor_cashback_acessorio                 ,
+  - Tipo_de_compra_assistencia_tecnica         :
+    - Valor_cashback_assistencia_tecnica       ,
+
+*___ Campo:  Valor_cashback_ foi excluido, pois valor é inserido diretamente
+             pelo vendedor
+
+
+-------------------------------------------||
+- Utilidade CashBack Porcentagem | Definição do Valor da Porcentagem no Banco
+  ou Demonstrado no Código
+  - Porcentagem Direta no Front-End
+  - Porcentagem Cálculo Direto no Front-End
+  - Implicação do Valor Não Ser Alterado em Outras Tabelas do Banco de Dados
+
+- Inserção de Valor de CashBack  
+
+
+- Checagem de Valor para Gasto CashBack : 
+  - Buscagem Valor Campo Cliente Nome   ,
+  - Inserção Valor No Campo Cálculo
+    - Campo Cálculo :
+      - Valor CashBack ,
+      - 1 Real para Cada 1 Real Valor CashBack ,
+      - Valor CashBack | Valor Minimo          ,
+
+
+
+------------------------------------------||
+- Gatilho de soma de valor para ValorVendido_Dia
+
+- Checagem de update de data
+
+- Numero_Compra  , Caso um cliente faça mais de uma compra por dia ?
+  - Numero compra armazenado na tabela cliente 
+  - Numero de compra somado a um campo posterior 
+    - Checagem da existencia de um campo
+      - Em caso de afirmação positiva passa para o proximo campo
+- Atualização do campo compra 
+  - Data | Compra
+  - Armazenagem do campo numero compra 
+    - Em cliente 
+  - Divisão do numero da compra ? 
+
+- Numero compra está em vendedor 
+  - Campo Compra_Numero com variavel 
+    - Cliente_Nome
+    - Data
+    - Valor_Compra
+  - Utilidade do Compra_Numero ?
+    - Mostrar Mais de Uma Compra Por Cliente no Relatorio 
+      - Gatilho para mostrar tabela
+        - Puxar Data
+        - Puxar Cliente_Nome
+        - Puxar Cliente_Compra
+          - IF Campo Numero_Compra > 2 
+            - Show Compra_Numero All | Valor | Cliente_Nome | Compra_Valor
+      - Numero_Compra possui partições da tabela cliente 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,54 @@
+# Esquema Site Apple Shop :
+
+- Pagina Inicial :
+  - Login
+    - Login Vendedor Apple Shop | Login Vendedor Note 
+  - Senha
+    - Somente para Usuário Master 
+  
+
+- Pagina do Usuario : 
+  - Quantidade de Cashback 
+  - Validade
+  - Promoções
+-----------------------------------------------------------------||
+- Pagina do Vendendor :
+  - Lançar Cashback - (Indicação do Vendendor é Direto no Login)
+    - Tipo de Produto
+    - Valor da Compra
+    - Nome/Cpf do Cliente
+    - Numero da Compra
+  - Debitar Cashback
+    - Valor Minimo para Gasto de Cashback
+    - Código de Confirmação
+  - Pesquisa do Cliente por Nome/Cpf
+    - Valor Necessario para Gasto de Cashback
+  - Cadastro
+    - Nome
+    - Cpf
+    - Nascimento
+    - Telefone
+
+
+- Registro Vendedores
+  - Codigo do Vendendor/Nome do Vendendor
+  - Quantidade de CashBack Vendido 
+
+
+
+-----------------------------------------------------------------||
+- IA WhatsApp :
+  - Quantidade de Cashback Disponivel
+  - Produtos e Cashbacks Disponiveis
+  - Data de Aniversario
+  - Validade do Cashback
+  - Valor Necessario para Gasto de Cashback
+  - Data de Gastos de Cashback
+  - Mensagem para Falar Sobre CashBack é Valor da Compra 
+  - Codigo de Confirmação Para Compra
+
+
+
+
+
+
